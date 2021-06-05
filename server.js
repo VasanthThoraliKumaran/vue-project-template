@@ -1,4 +1,5 @@
 const express = require("express");
+import { appConfig } from "./src/app.config";
 const history = require("connect-history-api-fallback");
 const app = express();
 app.use(history());
@@ -8,6 +9,4 @@ app.get("/", (req, res) => {
   res.sendFile("/dist/index.html");
 });
 
-console.log("port: ", process.env.DEV_SERVER_PORT);
-const port = 8080;
-app.listen(port, () => console.log("server started"));
+app.listen(appConfig.port.dev_server, () => console.log("server started"));

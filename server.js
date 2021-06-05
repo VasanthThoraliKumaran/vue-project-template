@@ -9,4 +9,5 @@ app.get("/", (req, res) => {
 });
 
 console.log("port: ", process.env.DEV_SERVER_PORT);
-app.listen(8080, () => console.log("server started"));
+const port = 8080;
+app.listen(port, () => console.log("server started"));

@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.05s linear;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  html,
+  body {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+  }
+  
+  .max-width {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .max-height {
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+  
+  html {
+    overflow: auto !important;
+  }
+  

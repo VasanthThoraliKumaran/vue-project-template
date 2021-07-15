@@ -9,6 +9,9 @@
 <script lang="ts">
 import Vue from "vue";
 import { appService } from "./app.service";
+import Component from 'vue-class-component';
+
+@Component({})
 export default class App extends Vue {
   public static instance: App;
 
